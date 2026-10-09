@@ -3,11 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Sparkles, BrainCircuit, BarChart3, Compass, PlayCircle } from 'lucide-react';
 import { createSession } from '../services/api';
 
-interface NavbarProps {
-  isDemo?: boolean;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ isDemo = false }) => {
+export const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -75,21 +71,14 @@ export const Navbar: React.FC<NavbarProps> = ({ isDemo = false }) => {
             })}
           </div>
 
-          {/* Right Action & Demo Indicator */}
+          {/* Right Action Button */}
           <div className="flex items-center gap-3">
-            {isDemo && (
-              <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 animate-pulse">
-                <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                Demo Mode
-              </span>
-            )}
-
             <button
               onClick={handleLaunchDemo}
               className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-600/25 hover:opacity-90 active:scale-95 transition-all cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              Interactive Demo
+              Quick Start
             </button>
           </div>
 

@@ -81,11 +81,51 @@
 
 /* React Flow node custom overrides */
 .react-flow__node {
-  border-radius: 12px;
+  border-radius: 14px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #f3f4f6 !important;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
+
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 14px !important;
+  padding: 0 !important;
+}
+
+.react-flow__handle {
+  background: #6366f1 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid #0f172a !important;
+}
+
+.react-flow__controls {
+  background: #0f172a !important;
+  border: 1px solid #334155 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+}
+
 .react-flow__controls button {
-  background: #19233c !important;
-  color: #fff !important;
-  border-bottom-color: #2a3a63 !important;
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-bottom: 1px solid #334155 !important;
+  fill: #f8fafc !important;
+  transition: all 0.2s ease;
+}
+
+.react-flow__controls button:hover {
+  background: #334155 !important;
+}
+
+.react-flow__controls button svg {
+  fill: #f8fafc !important;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import {
   Sparkles, ArrowRight, Brain, Share2, PlayCircle, CheckCircle2,
-  XCircle, Lightbulb, Compass, Award, Zap, RefreshCw
+  XCircle, Lightbulb, Compass, Zap, RefreshCw
 } from 'lucide-react';
 import { createSession } from '../services/api';
 
@@ -32,13 +32,6 @@ export const LandingPage: React.FC = () => {
         <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-violet-600/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute top-1/3 right-1/3 w-80 h-80 bg-cyan-600/15 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Hackathon Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold mb-8 backdrop-blur-md shadow-inner">
-          <Award className="w-4 h-4 text-amber-400" />
-          <span>Hackathon Track: AI + Education</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-ping"></span>
-        </div>
-
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none mb-6">
           Stop memorizing. <br className="hidden sm:inline" />
@@ -66,7 +59,7 @@ export const LandingPage: React.FC = () => {
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 rounded-2xl glass-card text-white font-semibold text-base hover:bg-slate-800/80 transition-all cursor-pointer border border-slate-700"
           >
             <PlayCircle className="w-5 h-5 text-cyan-400" />
-            Explore Interactive Demo
+            Explore Interactive Session
           </button>
         </div>
 

@@ -34,7 +34,7 @@ export const TopicSetupPage: React.FC = () => {
       const res = await createSession({ topic: topic.trim(), level, goal });
       navigate(`/session/${res.session_id}`);
     } catch (err: any) {
-      setError('Failed to initialize session. Using automatic Demo fallback mode.');
+      setError('Failed to initialize session. Please check your connection and retry.');
       setLoading(false);
     }
   };
