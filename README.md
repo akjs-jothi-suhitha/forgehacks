@@ -5,6 +5,8 @@
 [![Hackathon Track](https://img.shields.io/badge/Hackathon--Track-AI%20%2B%20Education-indigo)](https://github.com/)
 [![Tech Stack](https://img.shields.io/badge/Stack-FastAPI%20%7C%20React%20%7C%20TypeScript%20%7C%20Gemini-violet)](https://github.com/)
 [![Demo Mode](https://img.shields.io/badge/Demo--Mode-100%25%20Fail--Safe-emerald)](https://github.com/)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/akjs-jothi-suhitha/forgehacks)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template?template=https://github.com/akjs-jothi-suhitha/forgehacks)
 
 ConceptForge AI is an adaptive learning platform designed for hackathons that evaluates **how students think**, not merely whether they selected the correct answer.
 
@@ -78,6 +80,36 @@ npm install
 npm run build             # Build production bundle
 npm run dev               # Start dev server at http://localhost:5173
 ```
+
+---
+
+## 🌐 1-Click Cloud Deployment
+
+Deploy the entire fullstack application (FastAPI + React SPA) with a single click:
+
+### Option 1: Render (Recommended — Free)
+Click below to deploy directly using our pre-configured [render.yaml](render.yaml) blueprint:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/akjs-jothi-suhitha/forgehacks)
+
+1. Click the button or go to [render.com/deploy?repo=https://github.com/akjs-jothi-suhitha/forgehacks](https://render.com/deploy?repo=https://github.com/akjs-jothi-suhitha/forgehacks).
+2. Connect your GitHub account.
+3. (Optional) Provide your `GEMINI_API_KEY` or leave empty to use built-in Demo Mode.
+4. Render builds the Docker container and gives you a live permanent link: `https://<your-service>.onrender.com`.
+
+### Option 2: Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template?template=https://github.com/akjs-jothi-suhitha/forgehacks)
+
+1. Open [railway.app/new](https://railway.app/new) and select **Deploy from GitHub repo**.
+2. Select `akjs-jothi-suhitha/forgehacks`.
+3. Railway automatically detects the [Dockerfile](Dockerfile) and assigns a public HTTPS domain.
+
+### Option 3: Docker (Run Anywhere)
+```bash
+docker build -t conceptforge-ai .
+docker run -p 8000:8000 conceptforge-ai
+```
+Visit `http://localhost:8000` to access the fullstack app.
 
 ---
 
